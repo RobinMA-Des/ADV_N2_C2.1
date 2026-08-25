@@ -1,7 +1,6 @@
 #include <iostream>
-
-int main()
-{
-    /* code */
-return 0;
+using namespace std;
+int main(){
+    cout << "Hola buenas tardes" << endl;
+    return 0;
 }
