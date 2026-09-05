@@ -32,7 +32,7 @@ string mostrarFicha (string nombre, int vida, int coins, int espada, float speed
 string accesoAreaBosque (int nivel, bool llave)
 {
     string respuesta = "";
-    if (nivel >= 5 && llave == true)
+    if (nivel >= 7 && llave == true)
     {
         respuesta = "Acceso al bosque desbloqueado";
     }
@@ -53,3 +53,18 @@ string accesoAreaBosque (int nivel, bool llave)
     int nivel = 5;
 
     mostrarFicha(nombrePersonaje, vida, nivel, coins, espada, speed, llave);
+
+    cout << "Tratando de acceder al bosque..." << endl;
+    cout << "Atacamos a nuestro personaje con 50 de danio!<< endl;
+    vida = vida -50;
+    tiene llave = true;
+
+    cout << "" << endl;
+    cout << "Por haber encontrado la llave, has subido 3 niveles!" << endl;
+    nivel = nivel + 3;
+
+    mostrarFicha(nombrePersonaje, vida, nivel, coins, espada, speed, llave);
+    accessoAreaBosque(nivel, llave);
+
+    return 0;
+}
