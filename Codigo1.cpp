@@ -19,7 +19,7 @@ string mostrarFicha (string nombre, int vida, int coins, int espada, float speed
 {
     cout << "" << endl;
     cout << "Ficha tecnica << endl;
-    cout << "Nombre: " << nombre << endl";
+    cout << "Nombre: " << nombre << endl;
     cout << "Vida: " << vida << endl;
     cout << "Nivel: " << nivel << endl;
     cout << "Monedas: " << coins << endl;
@@ -29,9 +29,3 @@ string mostrarFicha (string nombre, int vida, int coins, int espada, float speed
     cout << "" << endl;
 }
 
-
-int main()
-}
-    }
-    }
-}
