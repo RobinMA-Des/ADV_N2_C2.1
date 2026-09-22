@@ -12,38 +12,39 @@ class Personaje{
     Personaje (int vida, bool vivo, int danioJugador):
     vida(vida),vivo(vivo),danioJugador(danioJugador)
     {}
-}
-
-void avanzar(){
-    cout << "Po avanza..." << endl;
-}
-
-void saltar(){
-    cout << "Po salta..." << endl;
-}
-
-void recibirDanio(int danio){
-    vida -= danio;
-
-    if (vida < 0) {
-        vida = 0;
-        vivo = false;
+    void avanzar(){
+        cout << "Po avanza..." << endl;
     }
 
-    cout << "Po recibio " << danio << " de danio." << endl;
-    cout << "Su vida restante es " << vida << "." << endl;
+    void saltar(){
+        cout << "Po salta..." << endl;
+    }
+
+    void recibirDanio(int danio){
+        vida -= danio;
+
+        if (vida < 0) {
+            vida = 0;
+            vivo = false;
+        }
+
+        cout << "Po recibio " << danio << " de danio." << endl;
+        cout << "Su vida restante es " << vida << "." << endl;
+    }
+
+    void verEstado(){
+        string alerta = "";
+        if (0 < vida < 30) alerta = "Vida demasiado baja!";
+
+        cout << "Estado de Po" << endl;
+        cout << "Vida restante: " << vida << endl;
+        cout << "Esta Vivo? " << (vivo == true ? "Si": "No") << endl;
+        cout << alerta << endl;
+        alerta = "";
+    }
 }
 
-void verEstado(){
-    string alerta = "";
-    if (0 < vida < 30) alerta = "Vida demasiado baja!";
 
-    cout << "Estado de Po" << endl;
-    cout << "Vida restante: " << vida << endl;
-    cout << "Esta Vivo? " << (vivo == true ? "Si": "No") << endl;
-    cout << alerta << endl;
-    alerta = "";
-}
 
 int main(){
     SetConsoleOutputCP(CP_UTF8);
