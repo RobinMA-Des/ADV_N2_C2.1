@@ -52,8 +52,10 @@ int main(){
     cout << "Vamos a crear nuestro PJ!" << endl;
     cout << "cuanta vida tendra po? << endl;
     cin >> vida;
-    cout << cuanto danio tiene po? << endl;
-    cin >> danio"
+    cout << cuanto vida tiene po? << endl;
+    cin >> vida;
+
+    Personaje jugador(vivo,vida,daniojugador);
 
     while (opcion != 5 && vivo)
     {
@@ -68,18 +70,18 @@ int main(){
         switch (opcion)
         {
             case 1:
-                avanzar();
+                jugador.avanzar();
                 break;
             case 2:
-                saltar();
+                jugador.saltar();
                 break;
             case 3:
                 cout << "Ingrese el danio a recibir: " << endl;
                 cin >> danio;
-                recibirDanio(danio);
+                jugador.recibirDanio(danio);
                 break;
             case 4:
-                verEstado();
+                jugador.verEstado();
                 break;
             case 5:
                 cout << "Saliendo..." << endl;
