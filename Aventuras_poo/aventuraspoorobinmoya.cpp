@@ -3,15 +3,20 @@
 #include <cstdlib>
 using namespace std;
 
-class Personaje{                
-    public:
+class Personaje{      
+    // atributos de la clase son privados, cuales son tambien, como es la clase/objeto ?          
+    private:
     int vida;
     bool vivo;
     int danioJugador;
-
+    
+    public:
+    // la siguiente funcion se llama constructor, se encargara de crear objetos de la clase
     Personaje (int vida, bool vivo, int danioJugador):
     vida(vida),vivo(vivo),danioJugador(danioJugador)
     {}
+    //una funcion void no retorna nada, solo ejecuta una accion
+    //métodos de la clase, que puede hacer la clase u objeto?
     void avanzar(){
         cout << "Po avanza..." << endl;
     }
