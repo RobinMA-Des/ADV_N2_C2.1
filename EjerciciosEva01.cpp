@@ -37,7 +37,8 @@ string MisionDesbloqueada (int nivel)
 
 Ejercicio 3: Recoleccion de monedas
 Contenido: Ciclos
-Utiliza un ciclo para representar la recoleccion de 10 monedas. Muestra un mensaje por cada moneda obtenida y el total al finalizar. Desafio: permitir que el usuario ingrese la cantidad de monedas
+Utiliza un ciclo para representar la recoleccion de 10 monedas. Muestra un mensaje por cada moneda obtenida y el total al finalizar. 
+Desafio: permitir que el usuario ingrese la cantidad de monedas
 
 
     for (int i = 0; i < 10; i++)
@@ -46,7 +47,7 @@ Utiliza un ciclo para representar la recoleccion de 10 monedas. Muestra un mensa
         cout << "10 Monedas obtenidas!" << endl;
     }   
 
-    Ejercicio 4: Calcular dano de ataque
+Ejercicio 4: Calcular dano de ataque
 Contenido: Funciones
 
 int calcularDanio(int ataque, int bonificador) {
