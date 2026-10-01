@@ -53,8 +53,15 @@ class Personaje{
 
 int main(){
     SetConsoleOutputCP(CP_UTF8);
-
+    
     int opcion = 0;
+    int tipopersonaje = 0;
+    int vida = 0;
+    bool vivo = true;
+    int daniojugador = 0;
+    string nombrepersonaje = "";
+    personaje* jugador = nullptr;
+
     cout << "Vamos a crear nuestro PJ!" << endl;
     cout << "cuanta vida tendra po? << endl;
     cin >> vida;
@@ -161,3 +168,17 @@ class Guerrero : public Personaje
     cout << "[2] Arquero." << endl;
     cin >> tipoPersonaje;
 
+    //Switch es para elegir entre las opciones que se le presentan al jugador, en este caso entre guerrero y arquero. Es mas eficiente
+     que un if else ya que permite elegir entre varias opciones y ejecutar el codigo correspondiente a la opcion elegida. Y tambien 
+     permite que el jugador pueda elegir entre las opciones que se le presentan y ejecutar el codigo correspondiente a la opcion elegida.
+
+     switch (tipoPersonaje){
+     case 1:
+         Guerrero jugador("Guerrero", nombrepersonaje, vida, vivo, danioJugador, "Espada");
+         break;
+     case 2:
+         Arquero jugador("Arquero", nombrepersonaje, vida, vivo, danioJugador, "Arco de las mil flamas demoniacas!!!");
+         break;
+     default:
+         cout << "Opción no válida." << endl;
+     }
