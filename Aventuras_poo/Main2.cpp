@@ -153,3 +153,11 @@ class Guerrero : public Personaje
     {
         cout << "El arquero ataca con su " << arma << endl;
     }
+
+    //Ejemplo de ciclo while con los personajes creados, se puede crear un ciclo while para que el jugador pueda elegir entre los personajes
+
+    cout << "Seleccione su personaje" << endl;
+    cout << "[1] Guerrero." << endl;
+    cout << "[2] Arquero." << endl;
+    cin >> tipoPersonaje;
+
