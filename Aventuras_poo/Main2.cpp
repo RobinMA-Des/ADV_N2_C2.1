@@ -10,7 +10,7 @@ class Personaje{
     bool vivo;
     int danioJugador;
     
-    public:
+    protected:
     // la siguiente funcion se llama constructor, se encargara de crear objetos de la clase
     Personaje (int vida, bool vivo, int danioJugador):
     vida(vida),vivo(vivo),danioJugador(danioJugador)
@@ -119,4 +119,37 @@ permite utilizar informacion almacenada y llamarla a voluntad, se reserva un esp
 
 //funcion && es cuando ambas opciones tienen que ser verdaderas para poder ejecutar el comando
 
-//El while se usa de forma constante hasta que la condicion deje de cumplirse. El for ocurre una cantidad determinada de veces
+//El while se usa de forma constante hasta que la condicion deje de cumplirse. El for ocurre una cantidad determinada de veces}
+
+//Aqui por ejemplo se crea una clase de personaje, se le asigna un nombre, vida, si esta vivo o no y el danio que puede recibir.
+ Luego se crea un objeto llamado jugador que es de la clase personaje y se le asignan los valores de vida, vivo y danioJugador. 
+ Luego se utiliza un ciclo while para permitir al usuario seleccionar opciones para avanzar, saltar,
+  recibir danio o revisar el estado del personaje hasta que decida salir o el personaje muera.    
+
+class Guerrero : public Personaje
+{
+    private:
+    string arma;
+    public:
+    Guerrero(int vida, bool vivo, int danioJugador, string nombreArma)
+    : Personaje(nombrepersonaje, vida, vivo, danioJugador), arma(nombreArma)
+    {}
+
+    Void atacar()
+    {
+        cout << "El guerrero ataca con su " << arma << endl;
+    }
+
+    class Arquero : public Personaje
+{
+    private:
+    string arma;
+    public:
+    Arquero(int vida, bool vivo, int danioJugador, string nombreArma)
+    : Personaje(nombrepersonaje, vida, vivo, danioJugador), arma(nombreArma)
+    {}
+
+    Void atacar()
+    {
+        cout << "El arquero ataca con su " << arma << endl;
+    }
