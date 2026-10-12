@@ -1,7 +1,3 @@
-//Construccion de clases
-
-//Clase Personaje, clase inventario, metodos protected, public y private, while para elegir personajes
-
 #include <iostream>
 #include <windows.h>
 using namespace std;
@@ -159,3 +155,12 @@ While (true) {
                 cout << "Opcion inválida. Intenta de nuevo." << endl;
         }
     }
+        << cout << "Quieres atacar a los enemigos?" << endl;"
+
+        for (int turno = 0; turno <= 5; turno++) {
+cout << "Enemigo: " << turno << endl;
+}  
+    cout << "Has derrotado a todos los enemigos!" << endl;
+    cout << "Felicidades, has completado el juego!" << endl;
+    return 0;
+}
